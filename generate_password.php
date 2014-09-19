@@ -1,11 +1,11 @@
 <!doctype html>
-<html>
+<html lang='en'>
   <head>
-    <title>Random English Word-based Password</title>
+    <title>Generated xkcd-style Password</title>
     <meta charset='utf-8'/>
   </head>
   <body>
-    <h1>Random English Word-based Password</h1>
+    <h1>Generated xkcd-style Password</h1>
     <?php 
       ini_set("auto_detect_line_endings", true);
       $words = file("words.txt", FILE_IGNORE_NEW_LINES|FILE_SKIP_EMPTY_LINES);
@@ -28,10 +28,13 @@
       $password = "";
       echo("    <p>");
 
+      // The main loop: for each random word
       for ($idx = 0; $idx < $requestCnt; ++$idx) {
 	$randIdx = rand(200, 6000);
         $newWord = $words[$randIdx];
 
+        // If the user requested it, make one letter of one word in the 
+        // password upper-case.
         if ($upperCase && ($wordToUpperCase == $idx + 1)) {
           $capsIdx = rand(0, strlen($newWord)-1);
 	  $pfx = substr($newWord, 0, $capsIdx);
@@ -40,12 +43,14 @@
           $newWord = $pfx . strtoupper($charToChange) . $sfx;
 	}
 
+        // If the user requested a random number to be inserted in one word...
         if ($insertNum && ($wordToInsertNum == $idx + 1)) {
           $numVal = rand(0, 9);
           $insertPos = rand(0, strlen($newWord));
           $newWord = substr_replace($newWord, $numVal, $insertPos, 0);
 	}
 
+        // If the user requested a randomly placed special character....
         if ($insertChar && ($wordToInsertChar == $idx + 1)) {
           $charVal = $chars[rand(0, count($chars) - 1)];
           $insertPos = rand(0, strlen($newWord));
@@ -55,6 +60,7 @@
         $password = $password . $newWord;
         if ($idx+1 < $requestCnt) $password = $password . '-';
       }
+
       echo($password . "</p>\n");
       
     ?>
