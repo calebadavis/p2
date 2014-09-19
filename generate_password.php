@@ -8,7 +8,7 @@
     <h1>Random English Word-based Password</h1>
     <?php 
       ini_set("auto_detect_line_endings", true);
-      $words = file("words.csv", FILE_IGNORE_NEW_LINES|FILE_SKIP_EMPTY_LINES);
+      $words = file("words.txt", FILE_IGNORE_NEW_LINES|FILE_SKIP_EMPTY_LINES);
       $chars = file("special_chars.txt", FILE_IGNORE_NEW_LINES|FILE_SKIP_EMPTY_LINES);
       $cnt = count($words); // How many words are in the dictionary?
       $specialCharsCnt = count($chars); // How many available special chars?
