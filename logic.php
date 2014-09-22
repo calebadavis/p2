@@ -24,7 +24,10 @@
 
       // The main loop: for each random word
       for ($idx = 0; $idx < $requestCnt; ++$idx) {
-	$randIdx = rand(200, 6000);
+
+        // First select a random word:
+	$randIdx = rand(200, 6000); // The interesting words start at 200
+                                    // and after 6000 become very esoteric
         $newWord = $words[$randIdx];
 
         // If the user requested it, make one letter of one word in the 
