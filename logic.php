@@ -8,6 +8,9 @@
       $insertNum = (bool)$_POST['insertNum']; // Should password include a num?
       $insertChar = (bool)$_POST['insertChar']; // Should it include a char?
       $upperCase = (bool)$_POST['upperCase']; // Should one character be caps?
+
+      if ($requestCnt < 1) $requestCnt = 4;
+
       // Which word in the password should get an inserted number?
       $wordToInsertNum = ($insertNum) ? rand(1, $requestCnt) : 0;
 
@@ -18,7 +21,6 @@
       $wordToUpperCase = ($upperCase) ? rand(1, $requestCnt) : 0;
 
       $password = "";
-      echo("    <p>");
 
       // The main loop: for each random word
       for ($idx = 0; $idx < $requestCnt; ++$idx) {

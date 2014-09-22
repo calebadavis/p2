@@ -31,7 +31,7 @@
 
       require("logic.php");
 
-      echo($password . "</p>\n");
+      echo("<p>$password</p>\n");
       
     ?>
   </body>
