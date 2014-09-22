@@ -19,13 +19,13 @@
           <legend>Word Count</legend>
           <?php
             if ($requestCnt < 1) $requestCnt = 4;
-            echo "          <p>Words: <input type='number' name='numWords' min='1' value='$requestCnt'/></p>\n";
+            echo "<p>Words: <input type='number' name='numWords' min='1' value='$requestCnt'/></p>\n";
           ?>
         </fieldset>
         <fieldset id="variations">
           <legend>Variations</legend>
           <?php
-            echo "          <p><input type='checkbox' name='insertNum' value='insertNum'";
+            echo "<p><input type='checkbox' name='insertNum' value='insertNum'";
             if ($insertNum) echo " checked";
             echo ">Insert a number?</p>\n";
             echo "          <p><input type='checkbox' name='insertChar' value='insertChar'";
@@ -36,9 +36,10 @@
             echo ">Make one character upper-case?</p>\n";
           ?>
         </fieldset>
-        <p><input type="submit" /></p>
+        <p><input type="submit" value="Generate" /></p>
       </form>
     </section>
+
     <section id="about">
       <p>An <a href="http://www.xkcd.com/936">xkcd style password</a> is a password which consists of several easy-to-remember words, rather than the traditional shorter, complex series of letters, numbers, and special characters:</p>
       <p>This page allows you to generate xkcd style passwords. You can specify how many common words to use for the password, as well as options for inserting a random special character, a randomly placed number (0-9), and to randomly capitalize one of the letters.</p>
