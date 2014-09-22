@@ -48,7 +48,7 @@
 
     <section id="password">
       <h2>New Password:</h2>
-      <?php echo "      <h3>$password</h3>\n"; ?>
+      <?php echo "<h3>$password</h3>\n"; ?>
     </section>
 
     <section id="cartoon">
