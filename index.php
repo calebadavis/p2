@@ -18,25 +18,24 @@
         <fieldset id="word_count">
           <legend>Word Count</legend>
           <?php
-            if ($requestCnt < 1) $requestCnt = 4;
-            echo "<p>Words: <input type='number' name='numWords' min='1' value='$requestCnt'/></p>\n";
+            echo "Words: <input type='number' name='numWords' min='1' value='$requestCnt'/>\n";
           ?>
         </fieldset>
         <fieldset id="variations">
           <legend>Variations</legend>
           <?php
-            echo "<p><input type='checkbox' name='insertNum' value='insertNum'";
+            echo "<input type='checkbox' name='insertNum' value='insertNum'";
             if ($insertNum) echo " checked";
-            echo ">Insert a number?</p>\n";
-            echo "          <p><input type='checkbox' name='insertChar' value='insertChar'";
+            echo ">Insert a number?<br/>\n";
+            echo "          <input type='checkbox' name='insertChar' value='insertChar'";
             if ($insertChar) echo " checked";
-            echo ">Insert a special character?</p>\n";
-            echo "          <p><input type='checkbox' name='upperCase' value='upperCase'";
+            echo ">Insert a special character?<br/>\n";
+            echo "          <input type='checkbox' name='upperCase' value='upperCase'";
             if ($upperCase) echo " checked";
-            echo ">Make one character upper-case?</p>\n";
+            echo ">Make one character upper-case?\n";
           ?>
         </fieldset>
-        <p><input type="submit" value="Generate" /></p>
+        <input type="submit" value="Generate" />
       </form>
     </section>
 
