@@ -4,12 +4,14 @@
 <http://p2.prowlers.com>
 
 ## Description
-* Demonstrates a fundamental understanding of HTML/CSS.
-* Demonstrates functional infrastructure necessary for subsequent dynamic web projects, including placeholder live url links for those projects.
-* Provides access to the project code via. an open github repository.
-* Serves as a personal introduction to the class staff.
+* A php-based web page which generates xkcd-style passwords. The user specifies how many common words to use for the password. Additionally, the user can specify some tweaks to the password, such as making one character upper-case, inserting a special character, or inserting a number.
+* Demonstrates use of php logic to read files, modify strings, read HTML form submission data, and generate inline HTML elements. 
+* Leverages multiple modules to demonstrate separation of concerns.
 
-## Outside code
+## 
+
+## Outside code/resources
+google-10000-english: https://github.com/first20hours/google-10000-english
 normalize.css: http://necolas.github.io/normalize.css
 
 
