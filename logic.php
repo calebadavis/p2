@@ -40,7 +40,7 @@ $insertChar =
 
 // Should one character be caps?
 $upperCase = 
-  (array_key_exists('insertChar', $_POST)) ? 
+  (array_key_exists('upperCase', $_POST)) ? 
     (bool)$_POST['upperCase']:
     false;
 
