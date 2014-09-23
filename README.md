@@ -12,7 +12,7 @@
 <http://www.screencast.com/t/mgH7Zy4NkVfR>
 
 ## Outside code/resources
-google-10000-english: https://github.com/first20hours/google-10000-english
-normalize.css: http://necolas.github.io/normalize.css
+* google-10000-english: https://github.com/first20hours/google-10000-english
+* normalize.css: http://necolas.github.io/normalize.css
 
 
