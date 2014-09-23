@@ -41,7 +41,7 @@
     </section>
 
     <section id="about">
-      <p>An <a href="http://www.xkcd.com/936">xkcd style password</a> is a password which consists of several easy-to-remember words, rather than the traditional shorter, complex series of letters, numbers, and special characters:</p>
+      <p>An <a href="http://www.xkcd.com/936">xkcd style password</a> is a password which consists of several easy-to-remember words, rather than the traditional shorter, complex series of letters, numbers, and special characters.</p>
       <p>This page allows you to generate xkcd style passwords. You can specify how many common words to use for the password, as well as options for inserting a random special character, a randomly placed number (0-9), and to randomly capitalize one of the letters.</p>
       <p>The words are based on a list of several thousand of the most commonly used words in the english language.</p> 
     </section>
