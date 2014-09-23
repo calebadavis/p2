@@ -59,9 +59,7 @@ $password = "";
 for ($idx = 0; $idx < $requestCnt; ++$idx) {
 
   // First select a random word:
-  $randIdx = rand(200, 6000); // The interesting words start at 200
-                              // and after 6000 become very esoteric
-  $newWord = $words[$randIdx];
+  $newWord = $words[rand(0, $cnt - 1)];
 
   // If the user requested it, make one letter of one word in the 
   // password upper-case.
