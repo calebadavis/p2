@@ -1,3 +1,4 @@
+<?php require("logic.php"); ?>
 <!doctype html>
 <html lang='en'>
 
@@ -11,8 +12,6 @@
   <body>
 
     <h1>An xkcd-style Password Generator</h1>
-
-    <?php require("logic.php"); ?>
 
     <section id="generator">
       <form action="index.php" method="post">
