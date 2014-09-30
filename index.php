@@ -18,7 +18,7 @@
         <fieldset id="word_count">
           <legend>Word Count</legend>
           <?php
-            echo "Words: <input type='number' name='numWords' min='1' value='$requestCnt'/>\n";
+            echo "Words: <input type='number' name='numWords' min='1' max='9' value='$requestCnt'/>\n";
           ?>
         </fieldset>
         <fieldset id="variations">
